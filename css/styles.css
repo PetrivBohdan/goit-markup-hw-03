@@ -215,16 +215,29 @@ h6 {
 /* Стилі портфоліо */
 .portfolio-card-list {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 24px;
+  padding-bottom: 120px;
 }
-.porfolio-card{
- 
+
+.li{
+  display: list-item;
+  text-align: -webkit-match-parent;
 }
 
 
-.portfolio-card-thumb{ 
-display: block;
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.portfolio-card-thumb { 
+padding-top: 32px;
+padding-bottom: 32px;
+padding-left: 16px;
 border-left: 1px solid var(--color-footer-text);
 border-right: 1px solid var(--color-footer-text);
 border-bottom:1px solid var(--color-footer-text);
@@ -232,11 +245,11 @@ border-bottom:1px solid var(--color-footer-text);
 
 .portfolio-list{
   display: flex;
+  justify-content: center;
   align-items: center;
   gap:24px;
-  padding-left: 271px;
-  padding-right: 271px;
-  margin-bottom: 72px;
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 .portfolio-button {
   padding: 12px 24px;
