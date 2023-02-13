@@ -1,24 +1,24 @@
 :root {
   --color-background-basic: #ffffff;
-  --color-background-secondary: #E5E5E5;
+  --color-background-secondary: #e5e5e5;
   /* Тимчасовий background колір для героя та футера */
-  --color-background-temporary: #2E2F42;
-  --color-title: #2E2F42;
-  --color-action-logo: #4D5AE5;
+  --color-background-temporary: #2e2f42;
+  --color-title: #2e2f42;
+  --color-action-logo: #4d5ae5;
   --color-hero-footer: #ffffff;
-  --color-logo-header: #2E2F42;
+  --color-logo-header: #2e2f42;
   --color-logo-footer: #ffffff;
-  --color-button-action: #404BBF;
-  --color-text:#434455;
-  --color-footer-text:#E7E9FC;
-  --color-section:#F4F4FD; 
-    --font-family: "Roboto", sans-serif;
-  --font-family-logo: "Raleway", sans-serif;
+  --color-button-action: #404bbf;
+  --color-text: #434455;
+  --color-footer-text: #e7e9fc;
+  --color-section: #f4f4fd;
+  --font-family: 'Roboto', sans-serif;
+  --font-family-logo: 'Raleway', sans-serif;
 }
 
 /* Видалити та змінити на векторну картинку */
 .hero {
-  padding:188px 0;
+  padding: 188px 0;
   background-color: var(--color-background-temporary);
   text-align: center;
 }
@@ -34,13 +34,18 @@ body {
   font-family: var(--font-family);
   font-size: 16px;
 }
-p,h1,h2,h3,h4,h5,h6{
-margin-top: 0;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
 }
 .container {
- width: 100%;
   max-width: 1158px;
-  margin: 0 ;
+  margin: 0 auto;
   padding: 0 15px;
 }
 .list {
@@ -52,9 +57,13 @@ margin-top: 0;
   text-decoration: none;
 }
 /* Header */
+.header {
+  color: var(--color-footer-text);
+  border-bottom: 1px solid var(--color-footer-text);
+}
 .header .container {
-  padding-left: 156px;
-  padding-right: 156px;
+  display: flex;
+  align-items: center;
 }
 
 .nav {
@@ -62,19 +71,19 @@ margin-top: 0;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
+  margin-right: auto;
 }
-.nav-list{
+.nav-list {
   display: flex;
   align-items: center;
   gap: 40px;
   margin-right: auto;
 }
-.address{
+.address {
   display: flex;
   align-items: center;
-
 }
-.nav-address{
+.address-list {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -96,6 +105,8 @@ margin-top: 0;
   color: var(--color-logo-header);
 }
 .header-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--color-title);
   font-weight: 500;
   line-height: 1.5;
@@ -107,6 +118,8 @@ margin-top: 0;
 }
 
 .header-list {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--color-text);
   font-style: normal;
   line-height: 1.5;
@@ -144,27 +157,14 @@ margin-top: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* Main */
-.ul-images {
+.ul-images{
   display: flex;
-  gap: 24px;
   align-items: center;
+  gap:24px;
+}
 
-}
-.images {
-  display:flex;
-  flex-wrap:wrap;
-  gap: 24px;
-  text-align: center;
-}
-.button {
-  display: flex;
-  margin-left:  427px;
-  gap: 24px;
-  margin-bottom: 72px;
-}
 .section {
-padding: 120px 0;
-
+  padding: 120px 0;
 }
 .section-title {
   margin-bottom: 72px;
@@ -189,7 +189,7 @@ padding: 120px 0;
   height: 72px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color:var(--color-text)
+  color: var(--color-text);
 }
 .team {
   color: var(--color-background-secondary);
@@ -213,6 +213,31 @@ padding: 120px 0;
   text-align: center;
 }
 /* Стилі портфоліо */
+.portfolio-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.porfolio-card{
+ 
+}
+
+
+.portfolio-card-thumb{ 
+display: block;
+border-left: 1px solid var(--color-footer-text);
+border-right: 1px solid var(--color-footer-text);
+border-bottom:1px solid var(--color-footer-text);
+}
+
+.portfolio-list{
+  display: flex;
+  align-items: center;
+  gap:24px;
+  padding-left: 271px;
+  padding-right: 271px;
+  margin-bottom: 72px;
+}
 .portfolio-button {
   padding: 12px 24px;
   background-color: var(--color-background-secondary);
@@ -234,6 +259,7 @@ padding: 120px 0;
   color: var(--color-logo-footer);
 }
 .portfolio-title {
+
   margin-bottom: 8px;
   color: var(--color-title);
   font-weight: 500;
@@ -242,22 +268,23 @@ padding: 120px 0;
   letter-spacing: 0.02em;
 }
 .portfolio-text {
+  margin-bottom: 32px;
   color: var(--color-text);
-  line-height:1.5;
-  letter-spacing: 0.02em
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 /* Footer */
 .footer-logo {
   color: var(--color-logo-footer);
 }
 
-.footer-text{
-width: 264px;
-height: 72px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color:var(--color-footer-text)
+.footer-text {
+  width: 264px;
+  height: 72px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-footer-text);
 }
 .footer-ling {
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
