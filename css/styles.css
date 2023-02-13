@@ -209,7 +209,6 @@ h6 {
   background-color: var(--color-background-basic);
 }
 .team-title {
-  padding-top: 32px;
   margin-bottom: 8px;
   color: var(--color-title);
   font-weight: 500;
@@ -218,7 +217,6 @@ h6 {
   text-align: center;
 }
 .team-text {
-  margin-bottom: 32px;
   color: var(--color-text);
   line-height: 1.5;
   text-align: center;
@@ -239,7 +237,7 @@ h6 {
 }
 
 
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -284,7 +282,7 @@ border-bottom:1px solid var(--color-footer-text);
   color: var(--color-logo-footer);
 }
 .portfolio-title {
-  
+  margin-bottom: 8px;
   color: var(--color-title);
   font-weight: 500;
   font-size: 20px;
@@ -292,7 +290,6 @@ border-bottom:1px solid var(--color-footer-text);
   letter-spacing: 0.02em;
 }
 .portfolio-text {
-  margin-bottom: 32px;
   color: var(--color-text);
   line-height: 1.5;
   letter-spacing: 0.02em;
